@@ -1,11 +1,26 @@
 import { useState } from "react";
+import Cards from "./assets/cards";
+import Navbar from "./assets/navbar";
+
 
 function App() {
-  const [count, setCount] = useState(0);
+  const TabKey = {
+    About: 1,
+    Projects: 2,
+    Blog: 3,
+    Contact: 4,
+  };
+  const [tabCurrent, setTabCurrent] = useState(TabKey[0]);
+
+  const baseX = 520;
+  const baseW = 221.5;
+
+  const x = baseX + [tabCurrent];
+  const w = baseW;
 
   return (
-    <>     
-      <div className="gradient-bg">
+    <>
+      <div className="relative gradient-bg">
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
             <filter id="goo">
@@ -24,25 +39,24 @@ function App() {
             </filter>
           </defs>
         </svg>
-
-
-        
-        <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-
-
         <div className="gradients-container">
           <div className="g1"></div>
           <div className="g2"></div>
-          <div className="g3"></div>              
-        </div> 
-               
+          <div className="g3"></div>
+        </div>
+      </div>
+      <div className="content">
+        <Cards
+          tabCurrent={tabCurrent}
+          setTabCurrent={setTabCurrent}
+          left={x}
+          sliderWidth={w}
+        />
+        <Navbar
+          tabCurrent={tabCurrent}
+          setTabCurrent={setTabCurrent}
+          left={x}
+          sliderWidth={w} />
       </div>
     </>
   );
