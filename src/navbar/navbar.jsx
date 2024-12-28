@@ -27,5 +27,5 @@ const Nav = ({ tabCurrent, setTabCurrent }) => {
     </nav>
   )
 }
-
+/*test from IDX */
 export default Nav
