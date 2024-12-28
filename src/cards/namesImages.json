@@ -1,0 +1,270 @@
+[
+    {
+        "id":"Pomodoro",
+        "images":["pomodoro.png"],
+        "github":"https://github.com/1Optimus/Pomodoro",
+        "demo":"https://pomodoro-ecru-chi.vercel.app/"
+    },
+    {
+        "id":"Json to CSV",
+        "images":["jsontocsv.png"],
+        "github":"https://github.com/1Optimus/jsontocsv",
+        "demo":"https://jsontocsv-1optimus.vercel.app/"
+    },
+    {
+        "id":"One Time Secret",
+        "images":["oneTimeSecret1.png","oneTimeSecret2.png","oneTimeSecret3.png","oneTimeSecret4.png","oneTimeSecret5.png"],
+        "github":"https://github.com/1Optimus/onetimesecret",
+        "demo":"null"
+    },
+    {
+        "id":"Url shortener",
+        "images":["urlshortener.png","urlshortener1.png","urlshortener2.png"],
+        "github":"https://github.com/1Optimus/urlshortener",
+        "demo":"null"
+    },
+    {
+        "id":"residential",
+        "images":["r1.png","r2.png","r3.png","r4.png","r5.png","r6.png","r7.png","r8.png"],
+        "github":"https://github.com/1Optimus/PG-Public",
+        "demo":"null"
+    },
+    {
+        "id":"Form",
+        "images":["form.png"],
+        "github":"https://github.com/1Optimus/Form",
+        "demo":"https://form-woad-five.vercel.app/"
+    },
+    {
+        "id":"Gallery",
+        "images":["GCP.jpg"],
+        "github":"https://github.com/1Optimus/GCP-project",
+        "demo":"null"
+    }
+    ,{
+        "id":"True Flavor",
+        "images":["Trueflavorimage.jpg"],
+        "github":"https://github.com/1Optimus/trueFlavor",
+        "demo":"https://true-flavor.vercel.app/"
+    },
+    {
+        "id":"Pokedex",
+        "images":["Poke1.png","Poke2.png","Poke3.png","Poke4.png","Poke5.jpg"],
+        "github":"https://github.com/1Optimus/Pokedex",
+        "demo":"null"
+    }
+]
+
+
+export const keys = {
+    a: {
+      type: "me",
+      text: "Full stack developer with over 2 years of experience, specializing in ReactJS, NodeJS, and Firebase technologies. Proven track record in developing robust, scalable applications and pioneering innovative solutions such as a multi-user login system and comprehensive technical support infrastructures. Skilled in enhancing user experience and operational efficiency through meticulous code refinement and integration of advanced features.",
+      img: "",
+    },
+    b: { type: "background", text: "", img: "" },
+    c: { type: "portfolio", text: "", img: "" },
+    d: { type: "socials", text: "", img: "" },
+    e: { type: "socials", text: "", img: "" },
+    o: { type: "socials", text: "", img: "" },
+    f: { type: "socials", text: "", img: "" },
+    g: { type: "socials", text: "", img: "" },
+    h: { type: "experience", text: "", img: "" },
+    i: {
+      type: "projects",
+      id: "Pomodoro",
+      images: ["pomodoro.png"],
+      github: "https://github.com/1Optimus/Pomodoro",
+      demo: "https://pomodoro-ecru-chi.vercel.app/",
+    },
+    j: {
+      type: "projects",
+      id: "Json to CSV",
+      images: ["jsontocsv.png"],
+      github: "https://github.com/1Optimus/jsontocsv",
+      demo: "https://jsontocsv-1optimus.vercel.app/",
+    },
+    k: {
+      type: "projects",
+      id: "One Time Secret",
+      images:
+        "oneTimeSecret1.png",
+        "oneTimeSecret2.png",
+        "oneTimeSecret3.png",
+        "oneTimeSecret4.png",
+        "oneTimeSecret5.png",
+      ],
+      github: "https://github.com/1Optimus/onetimesecret",
+      demo: "null",
+    },
+    l: {
+      type: "projects",
+      id: "Url shortener",
+      images: ["urlshortener.png", "urlshortener1.png", "urlshortener2.png"],
+      github: "https://github.com/1Optimus/urlshortener",
+      demo: "null",
+    },
+    m: {
+      type: "projects",
+      id: "residential",
+      images: [
+        "r1.png",
+        "r2.png",
+        "r3.png",
+        "r4.png",
+        "r5.png",
+        "r6.png",
+        "r7.png",
+        "r8.png",
+      ],
+      github: "https://github.com/1Optimus/PG-Public",
+      demo: "null",
+    },
+    n: {
+      type: "projects",
+      id: "Form",
+      images: ["form.png"],
+      github: "https://github.com/1Optimus/Form",
+      demo: "https://form-woad-five.vercel.app/",
+    },
+    p: {
+      type: "projects",
+      id: "Gallery",
+      images: ["GCP.jpg"],
+      github: "https://github.com/1Optimus/GCP-project",
+      demo: "null",
+    },
+    q: {
+      type: "projects",
+      id: "True Flavor",
+      images: ["Trueflavorimage.jpg"],
+      github: "https://github.com/1Optimus/trueFlavor",
+      demo: "https://true-flavor.vercel.app/",
+    },
+    r: {
+      type: "projects",
+      id: "Pokedex",
+      images: ["Poke1.png", "Poke2.png", "Poke3.png", "Poke4.png", "Poke5.jpg"],
+      github: "https://github.com/1Optimus/Pokedex",
+      demo: "null",
+    },
+  };
+  
+  export const AboutLayout = {
+    lg: [
+      { i: "a", x: 0, y: 0, w: 2, h: 2, isResizable: false },
+      { i: "b", x: 2, y: 0, w: 1, h: 1, isResizable: false },
+      { i: "c", x: 0, y: 4, w: 1, h: 1, isResizable: false },
+      { i: "d", x: 0, y: 2, w: 1, h: 1, isResizable: false },
+      { i: "e", x: 2, y: 7, w: 1, h: 1, isResizable: false },
+      { i: "f", x: 2, y: 1, w: 1, h: 1, isResizable: false },
+      { i: "g", x: 0, y: 6, w: 1, h: 1, isResizable: false },
+      { i: "h", x: 1, y: 6, w: 2, h: 1, isResizable: false },
+      { i: "i", x: 2, y: 2, w: 2, h: 1, isResizable: false },
+      { i: "j", x: 2, y: 7, w: 1, h: 1, isResizable: false },
+      { i: "k", x: 0, y: 7, w: 2, h: 1, static: true },
+      { i: "l", x: 0, y: 3, w: 1, h: 1, isResizable: false },
+      { i: "m", x: 1, y: 2, w: 2, h: 2, isResizable: false },
+      { i: "n", x: 0, y: 7, w: 1, h: 1, isResizable: false },
+      { i: "o", x: 1, y: 7, w: 1, h: 1, isResizable: false },
+      { i: "p", x: 2, y: 4, w: 1, h: 1, isResizable: false },
+      { i: "q", x: 0, y: 4, w: 2, h: 1, isResizable: false },
+    ],
+    xs: [
+      { i: "a", x: 0, y: 0, w: 2, h: 1, static: true },
+      { i: "b", x: 0, y: 1, w: 1, h: 1, static: true },
+      { i: "c", x: 0, y: 7, w: 1, h: 1, static: true },
+      { i: "d", x: 0, y: 3, w: 1, h: 1, static: true },
+      { i: "e", x: 1, y: 4, w: 1, h: 1, static: true },
+      { i: "f", x: 0, y: 2, w: 1, h: 1, static: true },
+      { i: "g", x: 1, y: 12, w: 2, h: 1, static: true },
+      { i: "h", x: 0, y: 9, w: 2, h: 1, static: true },
+      { i: "i", x: 0, y: 5, w: 1, h: 1, static: true },
+      { i: "j", x: 2, y: 13, w: 1.5, h: 1, static: true },
+      { i: "k", x: 2, y: 14, w: 3, h: 1, static: true },
+      { i: "l", x: 0, y: 8, w: 1, h: 1, static: true },
+      { i: "m", x: 0, y: 6, w: 1, h: 1, static: true },
+      { i: "n", x: 0, y: 11, w: 1, h: 1, static: true },
+      { i: "o", x: 0, y: 10, w: 1, h: 1, static: true },
+      { i: "p", x: 0, y: 10, w: 1, h: 1, static: true },
+      { i: "q", x: 0, y: 9, w: 1, h: 1, static: true },
+    ],
+  };
+  
+  export const ProjectsLayouts = {
+    lg: [
+      { i: "k", x: 1, y: 5, w: 2, h: 1, isResizable: false },
+      { i: "i", x: 1, y: 0, w: 2, h: 1, isResizable: false },
+      { i: "p", x: 0, y: 2, w: 1, h: 1, isResizable: false },
+      { i: "j", x: 0, y: 6, w: 1, h: 1, isResizable: false },
+      { i: "h", x: 0, y: 4, w: 2, h: 1, isResizable: false },
+      { i: "e", x: 3, y: 4, w: 1, h: 1, isResizable: false },
+      { i: "c", x: 1, y: 1, w: 2, h: 1, isResizable: false },
+      { i: "m", x: 0, y: 3, w: 2, h: 1, isResizable: false },
+      { i: "b", x: 0, y: 4, w: 1, h: 1, isResizable: false },
+      { i: "d", x: 3, y: 4, w: 1, h: 1, isResizable: false },
+      { i: "a", x: 1, y: 6, w: 2, h: 2, isResizable: false },
+      { i: "l", x: 0, y: 1, w: 1, h: 1, isResizable: false },
+      { i: "f", x: 1, y: 4, w: 1, h: 1, isResizable: false },
+      { i: "n", x: 0, y: 7, w: 1, h: 1, isResizable: false },
+      { i: "o", x: 2, y: 3, w: 1, h: 1, isResizable: false },
+      { i: "g", x: 0, y: 7, w: 1, h: 1, isResizable: false },
+      { i: "q", x: 0, y: 3, w: 2, h: 1, isResizable: false },
+    ],
+    xs: [
+      { i: "b", x: 0, y: 0, w: 2, h: 1, static: true },
+      { i: "i", x: 2, y: 0, w: 1, h: 1, static: true },
+      { i: "g", x: 0, y: 5, w: 1, h: 1, static: true },
+      { i: "c", x: 0, y: 1, w: 1, h: 1, static: true },
+      { i: "h", x: 1, y: 4, w: 1, h: 1, static: true },
+      { i: "f", x: 2, y: 2, w: 1, h: 1, static: true },
+      { i: "j", x: 1, y: 1, w: 2, h: 1, static: true },
+      { i: "e", x: 0, y: 4, w: 2, h: 1, static: true },
+      { i: "k", x: 0, y: 4, w: 1.5, h: 1, static: true },
+      { i: "d", x: 2, y: 4, w: 1.5, h: 1, static: true },
+      { i: "a", x: 2, y: 4, w: 3, h: 1, static: true },
+      { i: "l", x: 2, y: 5, w: 1, h: 1, static: true },
+      { i: "m", x: 2, y: 5, w: 1, h: 1, static: true },
+      { i: "n", x: 2, y: 5, w: 1, h: 1, static: true },
+    ],
+  };
+  
+  export const ContactLayouts = {
+    lg: [
+      { i: "l", x: 0, y: 3, w: 1, h: 1, isResizable: false },
+      { i: "i", x: 2, y: 5, w: 2, h: 1, isResizable: false },
+      { i: "g", x: 0, y: 0, w: 2, h: 1, isResizable: false },
+      { i: "c", x: 3, y: 1, w: 1, h: 1, isResizable: false },
+      { i: "d", x: 3, y: 0, w: 1, h: 1, isResizable: false },
+      { i: "f", x: 0, y: 1, w: 1, h: 1, isResizable: false },
+      { i: "j", x: 0, y: 4, w: 1, h: 1, isResizable: false },
+      { i: "e", x: 1, y: 1, w: 1, h: 1, isResizable: false },
+      { i: "a", x: 3, y: 2, w: 2, h: 2, isResizable: false },
+      { i: "b", x: 2, y: 1, w: 1, h: 1, isResizable: false },
+      { i: "h", x: 0, y: 5, w: 2, h: 1, isResizable: false },
+      { i: "k", x: 0, y: 2, w: 2, h: 1, isResizable: false },
+      { i: "m", x: 1, y: 2, w: 2, h: 2, isResizable: false },
+      { i: "n", x: 1, y: 2, w: 2, h: 2, isResizable: false },
+      { i: "o", x: 1, y: 6, w: 1, h: 1, isResizable: false },
+      { i: "p", x: 0, y: 5, w: 1, h: 1, isResizable: false },
+      { i: "g", x: 0, y: 7, w: 1, h: 1, isResizable: false },
+      { i: "q", x: 0, y: 3, w: 2, h: 1, isResizable: false },
+    ],
+    xs: [
+      { i: "l", x: 0, y: 0, w: 2, h: 1, static: true },
+      { i: "i", x: 2, y: 0, w: 1, h: 1, static: true },
+      { i: "g", x: 0, y: 0, w: 1, h: 1, static: true },
+      { i: "c", x: 0, y: 1, w: 1, h: 1, static: true },
+      { i: "d", x: 1, y: 1, w: 1, h: 1, static: true },
+      { i: "f", x: 2, y: 1, w: 1, h: 1, static: true },
+      { i: "j", x: 1, y: 1, w: 2, h: 1, static: true },
+      { i: "e", x: 0, y: 3, w: 2, h: 1, static: true },
+      { i: "a", x: 0, y: 4, w: 1.5, h: 1, static: true },
+      { i: "b", x: 2, y: 4, w: 1.5, h: 1, static: true },
+      { i: "h", x: 2, y: 4, w: 3, h: 1, static: true },
+      { i: "k", x: 2, y: 2, w: 1, h: 1, static: true },
+      { i: "m", x: 2, y: 2, w: 1, h: 1, static: true },
+      { i: "n", x: 2, y: 2, w: 1, h: 1, static: true },
+    ],
+  };
+  

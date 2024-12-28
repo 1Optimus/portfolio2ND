@@ -1,20 +1,17 @@
 import { useState } from "react";
-import Cards from "./assets/cards";
-import Navbar from "./assets/navbar";
+import Cards from "./cards/cards";
+import Navbar from "./navbar/navbar";
 
 
 function App() {
   const TabKey = {
     About: 1,
     Projects: 2,
-    Blog: 3,
     Contact: 4,
   };
   const [tabCurrent, setTabCurrent] = useState(TabKey[0]);
-
   const baseX = 520;
   const baseW = 221.5;
-
   const x = baseX + [tabCurrent];
   const w = baseW;
 
