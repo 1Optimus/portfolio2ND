@@ -44,8 +44,8 @@ function Cards({ tabCurrent }) {
       <ResponsiveReactGridLayout
         className="m-auto w-full"
         breakpoints={{ xl: 1920, lg: 1200, md: 768, sm: 480, xs: 200 }}
-        cols={{ xl: 3, lg: 3, md: 2, sm: 1, xs: 1 }}
-        rowHeight={300}
+        cols={{ xl: 6, lg: 4, md: 4, sm: 1, xs: 1 }}
+        rowHeight={280}
         layouts={currentLayout}
         draggableCancel=".no-drag"
       >
@@ -85,7 +85,9 @@ const Block = ({ valueProp }) => {
 };
 
 Block.propTypes = {
-  valueProp: PropTypes.arrayOf(PropTypes.string).isRequired,
+  valueProp: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.any), // Si es un array
+    PropTypes.object,                // Si es un objeto
+  ]).isRequired,
 };
-
 export default Cards;

@@ -1,13 +1,12 @@
 import PropTypes from "prop-types";
-import Me from '../../assets/me.png'
 
-const Projects = ({  valueProp }) => {
-    Projects.propTypes = {
-        valueProp: PropTypes.arrayOf(PropTypes.string).isRequired,
-        };
+const Projects = ({ valueProp }) => {
+  Projects.propTypes = {
+    valueProp: PropTypes.arrayOf(PropTypes.string).isRequired,
+  };
   return (
     <div className="">
-        <img src={Me} alt='about_me-img'/>
+      <img src={`/${valueProp[2]}`} alt={valueProp[1]} />
       <label htmlFor="">{valueProp[1]}</label>
     </div>
   );

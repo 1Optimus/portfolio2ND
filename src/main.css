@@ -129,10 +129,11 @@ body {
   }
 }
 .content {
+  margin-top: 7rem;
   position: relative;
   z-index: 1;
 }
-.react-grid-item.react-grid-placeholder {
+.react-grid-item.react-grid-placeholder {  
   background: rgba(211, 211, 211, 0.99) none repeat scroll 0% 0%;
   transition-duration: 100ms;
   z-index: 2;

@@ -7,14 +7,13 @@ function App() {
   const TabKey = {
     About: 1,
     Projects: 2,
-    Contact: 4,
+    Contact: 3,
   };
   const [tabCurrent, setTabCurrent] = useState(TabKey[0]);
   const baseX = 520;
   const baseW = 221.5;
   const x = baseX + [tabCurrent];
   const w = baseW;
-
   return (
     <>
       <div className="relative gradient-bg">
@@ -42,18 +41,18 @@ function App() {
           <div className="g3"></div>
         </div>
       </div>
+      <Navbar
+          tabCurrent={tabCurrent}
+          setTabCurrent={setTabCurrent}
+          left={x}
+          sliderWidth={w} />
       <div className="content">
         <Cards
           tabCurrent={tabCurrent}
           setTabCurrent={setTabCurrent}
           left={x}
           sliderWidth={w}
-        />
-        <Navbar
-          tabCurrent={tabCurrent}
-          setTabCurrent={setTabCurrent}
-          left={x}
-          sliderWidth={w} />
+        />        
       </div>
     </>
   );
