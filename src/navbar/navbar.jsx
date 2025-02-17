@@ -7,7 +7,7 @@ const Nav = ({ tabCurrent, setTabCurrent }) => {
   };
   const [active, setActive] = useState(tabCurrent==undefined?'#about':tabCurrent);
   return (
-    <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 flex gap-4 bg-gray-200 dark:bg-slate-950 p-4 rounded-full backdrop-blur-md  dark:bg-opacity-50">
+    <nav style={{ zIndex: 1 }} className="fixed top-8 left-1/2 transform -translate-x-1/2 flex gap-4 bg-gray-200 dark:bg-slate-950 p-4 rounded-full backdrop-blur-md  dark:bg-opacity-50">
       <a
         href="#about"
         className={`${

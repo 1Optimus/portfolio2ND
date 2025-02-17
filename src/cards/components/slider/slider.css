@@ -25,7 +25,6 @@
 .button-container {
   width: 3rem;
   height: 3rem;
-  z-index: 2;
   position: absolute;
   right: 10px; 
   top: 45%;

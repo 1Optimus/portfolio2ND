@@ -5,11 +5,17 @@ import {
   AboutLayout,
   ProjectsLayouts,
   keys,
-} from ".././position";
-import ToggleBG from './components/toggleBG'
-import About from './components/about'
-import Projects from './components/projects'
+} from "../position";
+import ToggleBG from "./components/toggleBG/toggleBG";
+import About from "./components/about";
+import Projects from "./components/projects";
 import PropTypes from "prop-types";
+import Download from "./components/download/download";
+import Social from "./components/socials";
+import github from "../assets/gith.json";
+import mail from "../assets/mail.json";
+import linkedin from "../assets/linkedin.json";
+import Experience from "./components/experience";
 
 function Cards({ tabCurrent }) {
   Cards.propTypes = {
@@ -40,19 +46,19 @@ function Cards({ tabCurrent }) {
   }, [tabCurrent]);
 
   return (
-    <div className="w-auto max-w-[1280px] mx-auto flex justify-between b-10">
+    <div className="w-auto max-w-[1300px] mx-auto flex justify-between">
       <ResponsiveReactGridLayout
         className="m-auto w-full"
         breakpoints={{ xl: 1920, lg: 1200, md: 768, sm: 480, xs: 200 }}
-        cols={{ xl: 6, lg: 4, md: 4, sm: 1, xs: 1 }}
-        rowHeight={280}
+        cols={{ xl: 12, lg: 8, md: 8, sm: 2, xs: 2 }}
+        rowHeight={160}
         layouts={currentLayout}
         draggableCancel=".no-drag"
       >
         {Object.entries(keys).map(([key, value]) => (
           <div
             key={key}
-            className="z-1 flex justify-center items-center shadow-[inset_0_0_0_2px_rgba(0,0,0,0)] rounded-3.5xl text-2xl text-[#FFFFFF] visible cursor-grab active:cursor-grabbing fade-in"
+            className="flex justify-center items-center shadow-[inset_0_0_0_2px_rgba(0,0,0,0)] rounded-3.5xl text-[#070505] dark:text-[#fcfcfc] visible cursor-grab active:cursor-grabbing fade-in"
           >
             <Block valueProp={Object.values(value)} />
           </div>
@@ -63,22 +69,29 @@ function Cards({ tabCurrent }) {
 }
 
 const Block = ({ valueProp }) => {
-   return (
-    <div className="bg-sky-200 bg-opacity-25 dark:bg-slate-950 dark:bg-opacity-50 h-full w-full flex flex-col justify-center items-center p-6 text-[var(--black-1)] rounded-3xl">
+  return (
+    <div className="bg-sky-100 bg-opacity-50 dark:bg-slate-950 dark:bg-opacity-50 h-full w-full flex flex-col rounded-3xl">
       {valueProp[0] === "background" ? (
-        <ToggleBG/>
+        <ToggleBG />
+      ) : valueProp[0] === "me" ? (
+        <About valueProp={valueProp} />
+      ) : valueProp[0] === "projects" ? (
+        <Projects valueProp={valueProp} />
+      ) : valueProp[0] === "portfolio" ? (
+        <Download />
+      ) : valueProp[0] === "socials" ? (
+        <Social
+          valueProp={valueProp}
+          github={github}
+          linkedin={linkedin}
+          mail={mail}
+        />
+      ) : valueProp[0] === "experience" ? (
+        <Experience valueProp={valueProp}/>
       ) : (
-        valueProp[0] === "me" ? (
-          <About valueProp={valueProp}/>
-        ) : (
-          valueProp[0] === "projects" ? (
-            <Projects valueProp={valueProp}/>
-          ) : (
-            <span>
-              <span className="normal-case">{valueProp[0]}</span>
-            </span>
-          )
-        )
+        <span>
+          <span className="normal-case">{valueProp[0]}</span>
+        </span>
       )}
     </div>
   );
@@ -86,8 +99,8 @@ const Block = ({ valueProp }) => {
 
 Block.propTypes = {
   valueProp: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.any), // Si es un array
-    PropTypes.object,                // Si es un objeto
+    PropTypes.arrayOf(PropTypes.any),
+    PropTypes.object,
   ]).isRequired,
 };
 export default Cards;
