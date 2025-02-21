@@ -5,10 +5,10 @@ const About = ({ valueProp }) => {
     valueProp: PropTypes.arrayOf(PropTypes.string).isRequired,
   };
   return (
-    <div className="p-12">
+    <div className="p-6 sm:p-8">
       <div className="flex items-center justify-start">
         <img src={Me} alt="about_me-img" className="w-52 h-auto" />
-        <p className="text-5xl mt-10 font-semibold">Ricardo Perez</p>
+        <p className="text-4xl sm:text-4xl xl:text-5xl mt-10 font-semibold">Ricardo Perez</p>
       </div>
       <p className="text-xl">{valueProp[1]}</p>
     </div>

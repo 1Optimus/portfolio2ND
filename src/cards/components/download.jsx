@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import Lottie from "lottie-react";
-import download from "../../../assets/download.json";
-import eye from "../../../assets/eye.json";
+import download from "../../assets/download.json";
+import eye from "../../assets/eye.json";
 const Download = () => {
   const lottieRefDow = useRef();
   const lottieRefEye = useRef();
@@ -15,9 +15,9 @@ const Download = () => {
   }, []);
   return (
     <div className="flex flex-row items-center justify-center h-screen">
-      <div className="flex flex-col mr-8">
+      <div className="flex flex-col mr-3 lg:mr-8">
         <p className="text-zinc-500 font-semibold">2025 CV</p>
-        <p className="text-5xl font-bold">Resume</p>
+        <p className="text-4xl md:text-4xl lg:text-5xl font-bold">Resume</p>
       </div>
       <Lottie
         lottieRef={lottieRefDow}

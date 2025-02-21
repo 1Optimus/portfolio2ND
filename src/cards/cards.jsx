@@ -6,16 +6,18 @@ import {
   ProjectsLayouts,
   keys,
 } from "../position";
+import Map from "./components/map";
 import ToggleBG from "./components/toggleBG/toggleBG";
 import About from "./components/about";
 import Projects from "./components/projects";
-import PropTypes from "prop-types";
-import Download from "./components/download/download";
+import Tech from "./components/tech/tech";
+import Experience from "./components/experience";
+import Download from "./components/download";
 import Social from "./components/socials";
 import github from "../assets/gith.json";
 import mail from "../assets/mail.json";
 import linkedin from "../assets/linkedin.json";
-import Experience from "./components/experience";
+import PropTypes from "prop-types";
 
 function Cards({ tabCurrent }) {
   Cards.propTypes = {
@@ -48,7 +50,7 @@ function Cards({ tabCurrent }) {
   return (
     <div className="w-auto max-w-[1300px] mx-auto flex justify-between">
       <ResponsiveReactGridLayout
-        className="m-auto w-full"
+        className="m-auto w-full mt-16"
         breakpoints={{ xl: 1920, lg: 1200, md: 768, sm: 480, xs: 200 }}
         cols={{ xl: 12, lg: 8, md: 8, sm: 2, xs: 2 }}
         rowHeight={160}
@@ -87,7 +89,11 @@ const Block = ({ valueProp }) => {
           mail={mail}
         />
       ) : valueProp[0] === "experience" ? (
-        <Experience valueProp={valueProp}/>
+        <Experience />
+      ) : valueProp[0] === "Tech" ? (
+        <Tech />
+      ) : valueProp[0] === "map" ? (
+        <Map valueProp={valueProp} />
       ) : (
         <span>
           <span className="normal-case">{valueProp[0]}</span>

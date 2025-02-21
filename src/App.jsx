@@ -79,7 +79,7 @@ function App() {
         left={x}
         sliderWidth={w}
       />
-      <div className="content">
+      <div className="content mt-8">
         <Cards
           tabCurrent={tabCurrent}
           setTabCurrent={setTabCurrent}

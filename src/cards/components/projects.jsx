@@ -8,14 +8,14 @@ const Projects = ({ valueProp }) => {
   const technologies = valueProp[5].split(".");
   return (
     <div className="flex flex-col h-screen p-6">
-      <div className="basis-4/6">
+      <div className="basis-1/3 lg:basis-4/6">
         <img
           className="rounded-xl"
           src={`/${valueProp[2]}`}
           alt={valueProp[1]}
         />
       </div>
-      <div className="basis-2/6 pt-3 no-drag">
+      <div className="basis-2/3 lg:basis-2/6 pt-3 no-drag">
         <div className="flex flex-row">
           <label className="text-2xl font-semibold mx-5" htmlFor="">
             {valueProp[1]}
@@ -29,7 +29,7 @@ const Projects = ({ valueProp }) => {
           </button>
           )}
         </div>
-        <div className="flex items-center pt-5 px-5">
+        <div className="flex flex-wrap pt-5 px-5">
           {technologies.map((tech) => (
             <Badges key={tech} tech={tech} />
           ))}
@@ -45,7 +45,7 @@ const Badges = ({ tech }) => {
     tech: PropTypes.string.isRequired,
   };
   return (
-    <span className="inline-flex items-center justify-center rounded-full bg-cyan-50 px-2.5 dark:bg-cyan-950 py-0.5 mr-2">
+    <span className="inline-flex items-center justify-center rounded-full bg-cyan-50 px-2.5 dark:bg-cyan-950 py-0.5 mr-2 mt-2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
