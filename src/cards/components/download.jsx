@@ -28,7 +28,7 @@ const Download = () => {
         onMouseLeave={() => lottieRefDow.current.stop()}
         onClick={() =>
           window.open(
-            "//github.com/1Optimus/portfolio/raw/main/src/assets/CV%20Ricardo%20Perez.pdf",
+            "https://github.com//1Optimus/portfolio2ND/raw/main/public/cv.pdf",
             "_blank"
           )
         }
@@ -40,9 +40,10 @@ const Download = () => {
         className="dark:brightness-0 dark:invert w-24 h-24 pointer-events-auto cursor-pointer no-drag"
         onMouseEnter={() => lottieRefEye.current.play()}
         onMouseLeave={() => lottieRefEye.current.stop()}
-        onClick={() => window.open("http://localhost:5173/cv.pdf", "_blank")}
+        onClick={() => window.open("/cv.pdf" , "_blank")}
       />
     </div>
   );
 };
 export default Download;
+/*onClick={() => window.open("http://localhost:5173/cv.pdf", "_blank")} */
